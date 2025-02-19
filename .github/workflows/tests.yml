@@ -34,25 +34,25 @@ jobs:
             use_psycopg2: psycopg2
           - crdb-version: v23.1.27
             use_server_side_binding: server_side_binding
-          - crdb-version: v23.2.12
-          - crdb-version: v23.2.12
+          - crdb-version: v23.2.20
+          - crdb-version: v23.2.20
             use_psycopg2: psycopg2
-          - crdb-version: v23.2.12
+          - crdb-version: v23.2.20
             use_server_side_binding: server_side_binding
-          - crdb-version: v24.1.5
-          - crdb-version: v24.1.5
+          - crdb-version: v24.1.13
+          - crdb-version: v24.1.13
             use_psycopg2: psycopg2
-          - crdb-version: v24.1.5
+          - crdb-version: v24.1.13
             use_server_side_binding: server_side_binding
-          - crdb-version: v24.2.3
-          - crdb-version: v24.2.3
+          - crdb-version: v24.2.10
+          - crdb-version: v24.2.10
             use_psycopg2: psycopg2
-          - crdb-version: v24.2.3
+          - crdb-version: v24.2.10
             use_server_side_binding: server_side_binding
-          - crdb-version: v24.3.2
-          - crdb-version: v24.3.2
+          - crdb-version: v24.3.6
+          - crdb-version: v24.3.6
             use_psycopg2: psycopg2
-          - crdb-version: v24.3.2
+          - crdb-version: v24.3.6
             use_server_side_binding: server_side_binding
           # Uncomment to enable testing of CockroachDB nightly.
           #- crdb-version: LATEST
