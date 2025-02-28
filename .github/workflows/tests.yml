@@ -29,37 +29,37 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - crdb-version: v23.1.27
-          - crdb-version: v23.1.27
+          - crdb-version: v23.2.20
+          - crdb-version: v23.2.20
             use_psycopg2: psycopg2
-          - crdb-version: v23.1.27
+          - crdb-version: v23.2.20
             use_server_side_binding: server_side_binding
-          - crdb-version: v23.2.12
-          - crdb-version: v23.2.12
+          - crdb-version: v24.1.13
+          - crdb-version: v24.1.13
             use_psycopg2: psycopg2
-          - crdb-version: v23.2.12
+          - crdb-version: v24.1.13
             use_server_side_binding: server_side_binding
-          - crdb-version: v24.1.5
-          - crdb-version: v24.1.5
+          - crdb-version: v24.2.10
+          - crdb-version: v24.2.10
             use_psycopg2: psycopg2
-          - crdb-version: v24.1.5
+          - crdb-version: v24.2.10
             use_server_side_binding: server_side_binding
-          - crdb-version: v24.2.3
-          - crdb-version: v24.2.3
+          - crdb-version: v24.3.6
+          - crdb-version: v24.3.6
             use_psycopg2: psycopg2
-          - crdb-version: v24.2.3
+          - crdb-version: v24.3.6
             use_server_side_binding: server_side_binding
-          - crdb-version: v24.3.2
-          - crdb-version: v24.3.2
+          - crdb-version: v25.1.0-rc.1
+          - crdb-version: v25.1.0-rc.1
             use_psycopg2: psycopg2
-          - crdb-version: v24.3.2
+          - crdb-version: v25.1.0-rc.1
             use_server_side_binding: server_side_binding
           # Uncomment to enable testing of CockroachDB nightly.
-          #- crdb-version: LATEST
-          #- crdb-version: LATEST
-          #  use_psycopg2: psycopg2
-          #- crdb-version: LATEST
-          #  use_server_side_binding: server_side_binding
+          - crdb-version: LATEST
+          - crdb-version: LATEST
+            use_psycopg2: psycopg2
+          - crdb-version: LATEST
+            use_server_side_binding: server_side_binding
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
